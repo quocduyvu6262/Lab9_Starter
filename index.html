@@ -86,7 +86,13 @@
       <button>Trigger a Global Error</button>
     </section>
   </main>
-
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS && TrackJS.install({ 
+      token: "fbc24ec58fdc4ae883786eb816ed7684"
+      // for more configuration options, see https://docs.trackjs.com
+    });
+  </script>
   <script>
     class InvalidNumberError extends Error {
       constructor(message) {
